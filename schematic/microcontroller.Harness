@@ -1,2 +1,3 @@
 SPI=MISO,MOSI,SCLK,\CS_ADC
+state_led=\com,\state,\error
 USB=N,P
