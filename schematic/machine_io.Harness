@@ -1,0 +1,2 @@
+actors=pump,valve,boiler
+buttons=\power,power_led,\brew,\water,\steam

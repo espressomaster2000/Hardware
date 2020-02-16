@@ -1,3 +1,5 @@
-SPI=MISO,MOSI,SCLK,\CS_ADC
-state_led=\com,\state,\error
+actors=valve,pump,boiler
+buttons=\steam,\brew,\water,\power,power_led
+SPI=\CS_ADC,SCLK,MISO,MOSI
+state_led=\com,\error,\state
 USB=N,P
