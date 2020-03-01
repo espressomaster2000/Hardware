@@ -3,4 +3,4 @@ buttons=\steam,\brew,\water,\power,power_led
 SPI=\CS_ADC,SCLK,MISO,MOSI
 state_led=\com,\error,\state
 USB=N,P
-variant=3,2,1
+variant=1,2,3
