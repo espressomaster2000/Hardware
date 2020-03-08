@@ -17,15 +17,15 @@ RevisionNamingSchemeGUID=
 [OutputGroup1]
 Name=release.OutJob
 Description=
-TargetOutputMedium=Stencil
+TargetOutputMedium=Gerber
 VariantName=[No Variations]
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=HP Universal Printing PCL 6
+TargetPrinter=\\print.bfh.ch\FollowMe
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
-OutputMedium1_Printer=
+OutputMedium1_Printer=\\print.bfh.ch\FollowMe
 OutputMedium1_PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium2=Schematic
 OutputMedium2_Type=Publish
@@ -68,7 +68,7 @@ OutputEnabled2_OutputMedium6=0
 OutputDefault2=0
 PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=2.10|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 Configuration2_Name1=OutputConfigurationParameter1
-Configuration2_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=39370080|ViewY=39370079|LookAtX=19685040|LookAtY=19685040|LookAtZ=0|UpX=0|UpY=1|UpZ=0|FOV=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=3.23595997864266E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=True|ScreenWidth=0|ScreenHeight=0|ViewConfig= 
+Configuration2_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=39370080|ViewY=39370079|LookAtX=19685040|LookAtY=19685040|LookAtZ=0|UpX=0|UpY=1|UpZ=0|FOV=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=3.23595997864266E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=True|ScreenWidth=0|ScreenHeight=0|ViewConfig=
 OutputType3=PCB 3D Print
 OutputName3=PCB 3D Print Bottom
 OutputCategory3=Documentation
@@ -84,7 +84,7 @@ OutputEnabled3_OutputMedium6=0
 OutputDefault3=0
 PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=2.10|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 Configuration3_Name1=OutputConfigurationParameter1
-Configuration3_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=39370080|ViewY=39370079|LookAtX=19685040|LookAtY=19685040|LookAtZ=0|UpX=0|UpY=1|UpZ=0|FOV=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=3.23595997864266E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=False|ScreenWidth=0|ScreenHeight=0|ViewConfig= 
+Configuration3_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=39370080|ViewY=39370079|LookAtX=19685040|LookAtY=19685040|LookAtZ=0|UpX=0|UpY=1|UpZ=0|FOV=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=3.23595997864266E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=False|ScreenWidth=0|ScreenHeight=0|ViewConfig=
 OutputType4=PCBDrawing
 OutputName4=Draftsman
 OutputCategory4=Documentation
@@ -128,7 +128,7 @@ OutputName6=Report Board Stack
 OutputCategory6=Fabrication
 OutputDocumentPath6=
 OutputVariantName6=
-OutputEnabled6=0
+OutputEnabled6=1
 OutputEnabled6_OutputMedium1=0
 OutputEnabled6_OutputMedium2=0
 OutputEnabled6_OutputMedium3=0
@@ -144,7 +144,7 @@ OutputName7=Gerber Files
 OutputCategory7=Fabrication
 OutputDocumentPath7=
 OutputVariantName7=
-OutputEnabled7=0
+OutputEnabled7=1
 OutputEnabled7_OutputMedium1=0
 OutputEnabled7_OutputMedium2=0
 OutputEnabled7_OutputMedium3=0
@@ -153,13 +153,13 @@ OutputEnabled7_OutputMedium5=1
 OutputEnabled7_OutputMedium6=0
 OutputDefault7=0
 Configuration7_Name1=OutputConfigurationParameter1
-Configuration7_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973834~1,16777217~1,16842753~1,16842754~1,16842751~1,16973835~1,16973831~1,16908289~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=True|Sorted=False|Sorted=False
+Configuration7_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973834~1,16777217~1,16842753~1,16842754~1,16842751~1,16973835~1,16973831~1,16908289~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False
 OutputType8=NC Drill
 OutputName8=NC Drill Files
 OutputCategory8=Fabrication
 OutputDocumentPath8=
 OutputVariantName8=
-OutputEnabled8=0
+OutputEnabled8=1
 OutputEnabled8_OutputMedium1=0
 OutputEnabled8_OutputMedium2=0
 OutputEnabled8_OutputMedium3=0
@@ -174,7 +174,7 @@ OutputName9=Stencil Gerber
 OutputCategory9=Fabrication
 OutputDocumentPath9=
 OutputVariantName9=
-OutputEnabled9=1
+OutputEnabled9=0
 OutputEnabled9_OutputMedium1=0
 OutputEnabled9_OutputMedium2=0
 OutputEnabled9_OutputMedium3=0
@@ -183,7 +183,7 @@ OutputEnabled9_OutputMedium5=0
 OutputEnabled9_OutputMedium6=1
 OutputDefault9=0
 Configuration9_Name1=OutputConfigurationParameter1
-Configuration9_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973832~1,16973833~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=True|Sorted=False|Sorted=False
+Configuration9_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973832~1,16973833~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False
 
 [PublishSettings]
 OutputFilePath2=C:\Users\stefan\Documents\espressomaster2000\Hardware\release\ProjectNumber-Schematic.pdf
@@ -253,7 +253,7 @@ OutputFileNameMulti4==ProductNumber+'-BOM'
 UseOutputNameForMulti4=0
 OutputFileNameSpecial4=
 OpenOutput4=0
-OutputFilePath5=C:\Users\stefan\Documents\espressomaster2000\Hardware\release\
+OutputFilePath5=\\vmware-host\Shared Folders\embedded\2001em\hardware\release\
 ReleaseManaged5=0
 OutputBasePath5=release\
 OutputPathMedia5=
@@ -266,7 +266,7 @@ OutputFileNameMulti5==ProductNumber
 UseOutputNameForMulti5=0
 OutputFileNameSpecial5=
 OpenOutput5=0
-OutputFilePath6=C:\Users\stefan\Documents\espressomaster2000\Hardware\release\
+OutputFilePath6=\\vmware-host\Shared Folders\embedded\2001em\hardware\release\
 ReleaseManaged6=0
 OutputBasePath6=release\
 OutputPathMedia6=
@@ -295,7 +295,7 @@ OpenGerberOutput4=0
 OpenNCDrillOutput4=0
 OpenIPCOutput4=0
 EnableReload4=0
-RelativeOutputPath5=C:\Users\stefan\Documents\espressomaster2000\Hardware\release\
+RelativeOutputPath5=\\vmware-host\Shared Folders\embedded\2001em\hardware\release\
 OpenOutputs5=0
 AddToProject5=0
 TimestampFolder5=0
@@ -305,7 +305,7 @@ OpenGerberOutput5=0
 OpenNCDrillOutput5=0
 OpenIPCOutput5=0
 EnableReload5=0
-RelativeOutputPath6=C:\Users\stefan\Documents\espressomaster2000\Hardware\release\
+RelativeOutputPath6=\\vmware-host\Shared Folders\embedded\2001em\hardware\release\
 OpenOutputs6=0
 AddToProject6=0
 TimestampFolder6=0
